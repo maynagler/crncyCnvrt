@@ -1,0 +1,49 @@
+body {
+  min-width: 400px;
+  min-height: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#quote {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #16B6DF;
+}
+
+#author {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+#generate {
+  display: block;
+  margin: 15px auto;
+  background: #20232a;
+  color: #f4f4e4;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+}
+
+select.curSelect{
+  width: 100px;
+  float: left
+}
+
+#labelFloat{
+  float: left;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
