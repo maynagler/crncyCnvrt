@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script type="text/javascript" src="popup.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Abril+Fatface|Ewert|Fascinate|Spicy+Rice" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <div class="divFrom">
 
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script type="text/javascript" src="popup.js"></script>
+  <script type="text/javascript" src="swap.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Abril+Fatface|Ewert|Fascinate|Spicy+Rice|Esteban" rel="stylesheet">
+</head>
 
-        <p id="headline">Currency Convertor</p>
+<body>
+  <div class="container">
+    <div class="divFrom">
+      <p id="headline">Currency Convertor</p>
+      <div class="half">
+        <p class="label">Amount:</p>
+        <br>
+        <input name="amountInput" class="amountInp" type="number" id="amount">
+      </div>
 
-        <span id="conertSnt">Amount:</span>
-        <input name="amountInput" class="form-control amountInp" type="number" id="amount">
+      <div class="half">
+        <p class="label" id="from">From:</p>
+        <p class="label" id="to">To:</p>
+        <br>
+        <select class="curSelect" id="fCurList" name="fCurList">
+            <option value="USD" selected="selected">USD</option>
+            <option value="ILS">ILS</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="AUD">AUD</option>
+            <option value="BGN">BGN</option>
+            <option value="BRL">BRL</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+            <option value="CNY">CNY</option>
+            <option value="CZK">CZK</option>
+            <option value="DKK">DKK</option>
+            <option value="HKD">HKD</option>
+            <option value="HRK">HRK</option>
+            <option value="HUF">HUF</option>
+            <option value="IDR">IDR</option>
+            <option value="INR">INR</option>
+            <option value="JPY">JPY</option>
+            <option value="KRW">KRW</option>
+            <option value="MXN">MXN</option>
+            <option value="MYR">MYR</option>
+            <option value="NOK">NOK</option>
+            <option value="NZD">NZD</option>
+            <option value="PHP">PHP</option>
+            <option value="PLN">PLN</option>
+            <option value="RON">RON</option>
+            <option value="RUB">RUB</option>
+            <option value="SEK">SEK</option>
+            <option value="SGD">SGD</option>
+            <option value="THB">THB</option>
+            <option value="TRY">TRY</option>
+            <option value="ZAR">ZAR</option>
+            }
+          </select>
+        <button type="button" name="button" id="swap"><img src="arrows.png" alt="" id="arrows"></button>
 
-        <span id="labelFloat">From:</span>
-        <select class="curSelect form-control" id="fCurList" name="fCurList">
-          <option value="USD" selected="selected">USD</option>
-          <option value="ILS">ILS</option>
-          <option value="EUR">EUR</option>
-          <option value="GBP">GBP</option>
-          <option value="AUD">AUD</option>
-          <option value="BGN">BGN</option>
-          <option value="BRL">BRL</option>
-          <option value="CAD">CAD</option>
-          <option value="CHF">CHF</option>
-          <option value="CNY">CNY</option>
-          <option value="CZK">CZK</option>
-          <option value="DKK">DKK</option>
-          <option value="HKD">HKD</option>
-          <option value="HRK">HRK</option>
-          <option value="HUF">HUF</option>
-          <option value="IDR">IDR</option>
-          <option value="INR">INR</option>
-          <option value="JPY">JPY</option>
-          <option value="KRW">KRW</option>
-          <option value="MXN">MXN</option>
-          <option value="MYR">MYR</option>
-          <option value="NOK">NOK</option>
-          <option value="NZD">NZD</option>
-          <option value="PHP">PHP</option>
-          <option value="PLN">PLN</option>
-          <option value="RON">RON</option>
-          <option value="RUB">RUB</option>
-          <option value="SEK">SEK</option>
-          <option value="SGD">SGD</option>
-          <option value="THB">THB</option>
-          <option value="TRY">TRY</option>
-          <option value="ZAR">ZAR</option>
-          }
-        </select>
-
-        <span id="labelFloat">To:</span>
-        <select class="curSelect form-control" id="tCurList" name="tCurList">
+        <select class="curSelect" id="tCurList" name="tCurList">
           <option value="USD">USD</option>
           <option value="ILS" selected="selected">ILS</option>
           <option value="EUR">EUR</option>
@@ -91,13 +97,13 @@
           <option value="TRY">TRY</option>
           <option value="ZAR">ZAR</option>
         </select>
-
-
+      </div>
     </div>
 
-      <p id="total">
-      </p>
-      <button type="button" name="button" id="generate" class="btn btn-success" >CONVERT THE MONEY!!!</button>
-    </div>
-  </body>
+    <p id="total">
+    </p>
+    <button type="button" name="button" id="generate" class="btn btn-success">CONVERT</button>
+  </div>
+</body>
+
 </html>
