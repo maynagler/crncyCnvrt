@@ -3,42 +3,66 @@ body {
   min-height: 200px;
   margin: 0 auto;
   text-align: center;
+  background-color: rgb(176, 245, 202);
 }
 
-#quote {
-  display: block;
-  font-size: 18px;
-  font-weight: bold;
-  color: #16B6DF;
+#headline{
+  font-family: 'Spicy Rice', cursive;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(18, 116, 6);
 }
 
-#author {
-  display: block;
-  margin-top: 15px;
-  font-size: 14px;
-  font-style: italic;
-  text-align: center;
+form{
+  width: 100%;
+  height: 200px;
 }
 
-#generate {
-  display: block;
-  margin: 15px auto;
-  background: #20232a;
-  color: #f4f4e4;
-  font-weight: bold;
-  border: none;
-  padding: 10px;
+#conertSnt{
+    font-size: 20px;
+    font-family: 'Spicy Rice', cursive;
 }
 
 select.curSelect{
   width: 100px;
-  float: left
+  float: left;
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Spicy Rice', cursive;
 }
 
 #labelFloat{
   float: left;
   font-size: 20px;
-  margin-right: 10px;
+  margin: 10px;
+  line-height: 1.5;
+  font-family: 'Spicy Rice', cursive;
+}
+
+input.amountInp{
+  width: 160px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Spicy Rice', cursive;
+}
+#total{
+  text-align: center;
+  height: 30px;
+  margin: 30px;
+  margin-bottom: 15px;
+  padding: 30px;
+  font-size: 20px;
+  font-family: 'Spicy Rice', cursive;
+}
+
+#generate {
+  display: block;
+  margin: 15px auto;
+  border: none;
+  padding: 10px;
+  width:  100%;
+  font-family: 'Spicy Rice', cursive;
+  font-size: 25px;
 }
 
 input::-webkit-outer-spin-button,

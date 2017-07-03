@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Function to write data into our DOM Elements
   function setDataToDOM(data) {
-    total.innerHTML = data.rates[to]*amount;
+    total.innerHTML = (data.rates[to]*amount).toFixed(2);
   }
 
   // Get starting quote
@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     getQuoteFromAPI(setDataToDOM);
   });
 });
+
 
 // Function to generate new quote via fetch()
 function getQuoteFromAPI(callback) {
