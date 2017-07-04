@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-
   document.getElementById('swap').addEventListener('click', function swapvals() {
+
+
     var fromVal = $("#fCurList option:selected").val();
     var fromText = $("#fCurList option:selected").text();
     var toVal = $("#tCurList option:selected").val();
@@ -14,4 +15,4 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-});
+  });

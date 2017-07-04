@@ -26,15 +26,15 @@ select.curSelect{
 }
 
 p.label{
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.4;
   font-family: 'Esteban', serif;
   font-weight: 100;
   color: black;
-  margin:12px;
+  margin:16tbjbu px;
 }
 #to{
-  padding: 20px;
+  padding: 22px;
 }
 #arrows{
   height: 18px;
