@@ -33,8 +33,13 @@ p.label{
   color: black;
   margin:16tbjbu px;
 }
+#from{
+  padding: 11%;
+  letter-spacing: 1px;
+}
 #to{
-  padding: 22px;
+  padding: 14%;
+  letter-spacing: 1px;
 }
 #arrows{
   height: 18px;
